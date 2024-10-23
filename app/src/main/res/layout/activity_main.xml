@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/aTe"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="16sp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:hint="@string/a"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/squareTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bTe"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="16sp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:hint="@string/b"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/linearTv"
+        app:layout_constraintStart_toEndOf="@+id/squareTv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cTe"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="16sp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:hint="@string/c"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/equalsTv"
+        app:layout_constraintStart_toEndOf="@+id/linearTv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/squareTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:text="@string/squaredX"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bTe"
+        app:layout_constraintStart_toEndOf="@+id/aTe" />
+
+    <TextView
+        android:id="@+id/equalsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:text="@string/equals"
+        app:layout_constraintEnd_toStartOf="@+id/resultTv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/linearTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:text="@string/x"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cTe"
+        app:layout_constraintStart_toEndOf="@+id/bTe" />
+
+    <TextView
+        android:id="@+id/resultTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="32sp"
+        android:text="@string/_0"
+        app:layout_constraintStart_toEndOf="@+id/equalsTv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultX1Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:layout_marginStart="16sp"
+        android:text="@string/x1"
+        app:layout_constraintTop_toBottomOf="@id/aTe"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/resultX2Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:layout_marginStart="16sp"
+        android:text="@string/x2"
+        app:layout_constraintTop_toBottomOf="@id/resultX1Tv"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/solveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="24sp"
+        android:layout_marginEnd="16sp"
+        android:text="@string/find_roots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultX2Tv" />
+
+    <Button
+        android:id="@+id/switchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginBottom="16sp"
+        android:layout_marginEnd="16sp"
+        android:text="@string/switch_tasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/switchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/solveBtn"
+        app:srcCompat="@mipmap/quadratic"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

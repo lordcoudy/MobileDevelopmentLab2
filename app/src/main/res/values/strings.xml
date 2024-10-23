@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Лабораторная 2</string>
+    <string name="equals"> = </string>
+    <string name="squaredX">* x^2 + </string>
+    <string name="x">* x + </string>
+    <string name="hint_answer">Здесь будет ответ</string>
+    <string name="a">a</string>
+    <string name="b">b</string>
+    <string name="c">c</string>
+    <string name="_0">0</string>
+    <string name="x1">X1 = </string>
+    <string name="x2">X2 = </string>
+    <string name="find_roots">Найти корни</string>
+    <string name="switch_tasks">Сменить задание</string>
+    <string name="choose_task">Лабораторная 2</string>
+    <string name="_2_9">Цифра от 2 до 9</string>
+    <string name="ch_ex">Упражнение выборочно</string>
+    <string name="any_ex">Упражнение для всех чисел</string>
+    <string name="ent_ans">Введите свой ответ</string>
+    <string name="check">Проверить</string>
+    <string name="big_x">X</string>
+    <string name="correct">Правильных ответов: </string>
+</resources>

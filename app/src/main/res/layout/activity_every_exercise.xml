@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/every_exercise"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EveryExercise">
+
+    <TextView
+        android:id="@+id/leftNumTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="100sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rightNumTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:layout_marginEnd="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/multiplyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="100sp"
+        android:layout_marginEnd="50sp"
+        android:text="@string/big_x"
+        app:layout_constraintEnd_toStartOf="@+id/rightNumTv"
+        app:layout_constraintStart_toEndOf="@+id/leftNumTv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="150sp"
+        android:layout_marginEnd="50sp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ent_ans"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiplyTv" />
+
+    <Button
+        android:id="@+id/checkAnsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24sp"
+        android:layout_marginEnd="50sp"
+        android:text="@string/check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <TextView
+        android:id="@+id/correctTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/correct"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
